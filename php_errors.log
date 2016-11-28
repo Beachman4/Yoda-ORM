@@ -1,0 +1,54 @@
+[22-Nov-2016 20:19:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Connection.php:39
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\src\Database.php(23): Yoda\Connection->establishConnection()
+#1 C:\Users\aarmstrong\PhpstormProjects\test\src\Database.php(17): Yoda\Database->setupConnection()
+#2 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Database->__construct()
+#3 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Connection.php on line 39
+[23-Nov-2016 16:16:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in C:\Users\aarmstrong\PhpstormProjects\test\index.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\index.php on line 7
+[23-Nov-2016 16:16:44 UTC] PHP Notice:  Undefined index: key in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:16:44 UTC] PHP Notice:  Undefined index: operator in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:16:44 UTC] PHP Notice:  Undefined index: value in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:16:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:58
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 58
+[23-Nov-2016 16:17:15 UTC] PHP Notice:  Undefined offset: 0 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:17:15 UTC] PHP Notice:  Undefined offset: 1 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:17:15 UTC] PHP Notice:  Undefined offset: 2 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 51
+[23-Nov-2016 16:17:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:58
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 58
+[23-Nov-2016 16:17:27 UTC] PHP Notice:  Array to string conversion in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 41
+[23-Nov-2016 16:17:27 UTC] PHP Notice:  Undefined offset: 0 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:27 UTC] PHP Notice:  Undefined offset: 1 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:27 UTC] PHP Notice:  Undefined offset: 2 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:59
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 59
+[23-Nov-2016 16:17:36 UTC] PHP Notice:  Undefined offset: 0 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:36 UTC] PHP Notice:  Undefined offset: 1 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:36 UTC] PHP Notice:  Undefined offset: 2 in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 52
+[23-Nov-2016 16:17:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:59
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 59
+[23-Nov-2016 16:33:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoda\PDO' not found in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:63
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 63
+[23-Nov-2016 16:33:23 UTC] PHP Fatal error:  Uncaught Error: Non-static method PDO::query() cannot be called statically in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php:65
+Stack trace:
+#0 C:\Users\aarmstrong\PhpstormProjects\test\index.php(7): Yoda\Builder->get()
+#1 {main}
+  thrown in C:\Users\aarmstrong\PhpstormProjects\test\src\Builder.php on line 65
