@@ -51,20 +51,29 @@ class Builder
         return $this;
     }
 
-    public function get()
+    public function get($columns = [])
     {
-        $this->sql = "SELECT * FROM {$this->table}";
+        if (count($columns) == 0) {
+            $this->sql = "SELECT * FROM {$this->table}";
+        } else {
+            $formatted_columns = implode(',', $columns);
+            $this->sql = "SELECT $formatted_columns FROM {$this->table}";
+        }
+
+        $variables = [];
 
         $count = 0;
         foreach($this->where as $where) {
             if ($count == 0) {
-                $this->sql .= " WHERE {$where['key']} {$where['operator']} {$where['value']}";
+                $this->sql .= " WHERE {$where['key']} {$where['operator']} :where{$where['key']}";
+                $variables[":where{$where['key']}"] = $where['value'];
             } else {
-                $this->sql .= " AND WHERE {$where['key']} {$where['operator']} {$where['value']}";
+                $this->sql .= " AND {$where['key']} {$where['operator']} :where{$where['key']}";
+                $variables[":where{$where['key']}"] = $where['value'];
             }
             $count++;
         }
-        $result = $this->database->query($this->sql);
+        $result = $this->database->query($this->sql, $variables);
         $array = [];
         foreach($result as $row) {
             array_push($array, $row);

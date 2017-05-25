@@ -23,11 +23,12 @@ class Database {
         $this->connection = $connection->establishConnection();
     }
 
-    public function query($query)
+    public function query($query, $variables)
     {
-        $result = $this->connection->query($query);
+        $prepare = $this->connection->prepare($query);
+        $prepare->execute($variables);
 
-        return $result;
+        return $prepare;
     }
 
 }
